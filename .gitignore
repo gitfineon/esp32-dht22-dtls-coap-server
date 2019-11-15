@@ -1,52 +1,49 @@
-# Prerequisites
-*.d
-
-# Object files
+.config
 *.o
-*.ko
-*.obj
-*.elf
+*.pyc
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# gtags
+GTAGS
+GRTAGS
+GPATH
 
-# Precompiled Headers
-*.gch
-*.pch
+# emacs
+.dir-locals.el
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# emacs temp file suffixes
+*~
+.#*
+\#*#
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# eclipse setting
+.settings
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# MacOS directory files
+.DS_Store
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Example project files
+coap_server_dht22/**/sdkconfig
+coap_server_dht22/**/sdkconfig.old
+coap_server_dht22/**/build
+TEST_LOGS
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# gcov coverage reports
+*.gcda
+*.gcno
+coverage.info
+coverage_report/
+
+test_multi_heap_host
+
+# VS Code Settings
+.vscode/
+
+# Clion IDE CMake build & config
+.idea/
+cmake-build-*/
+
+# Results for the checking of the Python coding style
+flake8_output.txt
+
+# ESP-IDF default build directory name
+build
